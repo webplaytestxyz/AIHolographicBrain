@@ -123,11 +123,3 @@ License & acknowledgements
 --------------------------
 - This is a demo / research toy. No license file included by default — add one if you plan to publish or share widely.
 
-If you want, I can also:
-- Generate an `environment.yml` you can use with `conda env create -f environment.yml` that pins versions known to work together on Windows/Anaconda.
-- Add an example `requirements.txt` for pip-only setups.
-- Implement a temporal stability criterion and an on-plot prompt button (avoids keyboard dependence).
-
----
-
-If you'd like the `environment.yml`, tell me whether you prefer conda-forge packages for PyVista/VTK or pip wheels for PyTorch (GPU), and I will prepare it and add it to the repo.
