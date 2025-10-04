@@ -1,0 +1,27 @@
+name: aibrain
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pyvista=0.46.3
+  - vtk
+  - pyvistaqt
+  - pyqt=5
+  - pip:
+    - torch==2.2.0+cpu
+    - torchvision==0.17.0+cpu
+    - torchaudio==2.2.0
+
+# Notes:
+#  - This environment.yml prefers conda-forge for VTK/PyVista and uses pip to install
+#    CPU-only PyTorch wheels (stable index). If a pip wheel fails, you can instead
+#    install PyTorch from the pytorch channel manually:
+#      conda install pytorch cpuonly -c pytorch
+#  - Adjust python version as needed (3.10 recommended for compatibility).
+#  - If you plan to use CUDA GPUs, install the GPU-enabled PyTorch following
+#    official instructions instead of the +cpu wheels.
